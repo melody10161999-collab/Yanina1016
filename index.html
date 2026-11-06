@@ -369,7 +369,7 @@
     }
 
     .film-window .photo-placeholder .icon {
-      font-size: 28px
+      font-size: 20px
     }
 
     .reel-hole .mini-photo {
@@ -587,14 +587,14 @@
 
     /* 關於我：個人照片整體往上移 */
     .about-picture {
-      transform: translateY(-120px);
+      transform: translateY(0);
     }
 
 
     /* 電腦版：照片往上移 */
     @media (min-width: 781px) {
       .about-picture {
-        transform: translateY(-120px);
+        transform: translateY(0);
       }
     }
 
@@ -2581,6 +2581,19 @@
         width: min(100%, 340px);
       }
     }
+
+
+    /* 桃件衣福封面：完整顯示，不裁切 */
+    .thumb img.tao-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .card:has(.tao-cover) .thumb {
+      background-color: #FFF3E9;
+    }
   </style>
 </head>
 
@@ -2806,36 +2819,10 @@
             <p>喜歡溫柔的顏色、可愛的小事物，也喜歡把每個值得記得的瞬間，變成一張照片、一段影片，或是一個小故事。</p>
             <p>「妍究所」是我收藏日常、分享親子生活與影像創作的小天地。希望來到這裡的你，也能找到屬於自己的小小幸福。</p>
             <p>☆那些和孩子們一起長大的日子☆
-              <dd>
-                <p>安親老師的日常，從來不只是陪伴孩子寫功課。
 
-                  每天處理大大小小的瑣事，傾聽孩子的心情、化解同學間的紛爭，偶爾還得接住那些突如其來的小情緒。
-                </p>
-
-                <p>
-                  孩子們的調皮搗蛋、天真活潑，總讓每天的生活充滿意想不到的故事。
-
-                  這份工作讓我明白，教育不只是教會孩子知識，更重要的是學會傾聽、理解與陪伴。
-
-                  也因為這段經歷，我開始對孩子的情緒世界有了更多觀察與想法，並將這份體會延伸成原創親子動畫——**《咪咪有話要說》**。
-
-                  希望透過咪咪的故事，讓每個孩子沒說出口的小情緒，都能被溫柔地聽見。
-                </p>
-              </dd>
 
             <p>♡保持快樂，是我的生活哲學 ♡</p>
-            <dd>
-              <p>生活不一定每天都順心，但我始終相信，快樂是一件值得認真對待的事。
 
-                喜歡笑、喜歡分享，也喜歡在平凡的日常裡，尋找那些微不足道的小幸福。
-
-                偶爾無厘頭，偶爾天馬行空，偶爾只想沉浸在自己的小宇宙裡。
-
-                不需要每一天都過得精彩，但希望每一天，都能有讓自己嘴角上揚的理由。
-
-                **以快樂為中心，帶著一點勇氣、一點浪漫，繼續探索生活的各種可能。**
-            </dd>
-            </p>
 
 
             <div class="tags"><span>♡ 親子生活</span><span>✿ 影像創作</span><span>☼ 旅行紀錄</span><span>♡ 生活美學</span></div>
@@ -2878,7 +2865,31 @@
           <p>小小靈感，也值得被好好珍藏。</p>
         </div>
         <p class="works-intro">從親子旅行到角色故事，每一份創作都裝著一點心意。</p>
+
+
+
         <div class="cards works-grid">
+
+
+          <!-- 桃件衣福：童裝品牌企劃 -->
+          <a href="./taoclothes.html" class="card-link">
+            <article class="card">
+
+              <div class="thumb">
+                <img src="./images/桃件衣福童裝品牌海報.png" alt="桃件衣福童裝品牌海報" class="work-photo tao-cover">
+              </div>
+
+              <h3>桃件衣福</h3>
+
+              <p>
+                小桃的童裝品牌企劃｜
+                商品視覺設計、品牌識別與社群行銷。
+              </p>
+
+            </article>
+          </a>
+
+
           <a href="https://www.youtube.com/watch?v=TRO2oNS1JNY" target="_blank" rel="noopener noreferrer"
             class="card-link">
             <article class="card">
@@ -2923,12 +2934,12 @@
           </a>
 
           <article class="card">
-              <div class="thumb">
-                <img src="./images/我們之間的時差.png" alt="" class="work-photo">
-              </div>
-              <h3>不妍而喻</h3>
-              <p>腦袋裡的故事，不斷湧現。(創作中)</p>
-            </article>
+            <div class="thumb">
+              <img src="./images/我們之間的時差.png" alt="" class="work-photo">
+            </div>
+            <h3>不妍而喻</h3>
+            <p>腦袋裡的故事，不斷湧現。(創作中)</p>
+          </article>
         </div>
         <div class="tip"><strong><img src="./images/IG QRCODE.png" alt="Instagram QR Code" class="ig-qrcode"></strong>
         </div>

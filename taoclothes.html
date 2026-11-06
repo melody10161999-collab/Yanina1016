@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>桃件衣福｜童裝品牌企劃</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #FFFAF5;
+      color: #654F4A;
+      font-family: "Microsoft JhengHei", sans-serif;
+      line-height: 1.8;
+    }
+
+    header {
+      padding: 20px 8%;
+      background: #FFFFFF;
+    }
+
+    header a {
+      color: #B56E7A;
+      text-decoration: none;
+    }
+
+
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 72px);
+      color: #B56673;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 16px;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 70px 24px;
+    }
+
+    h2 {
+      color: #B56673;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product {
+      padding: 15px;
+      background: #FFFFFF;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .placeholder {
+      display: grid;
+      place-items: center;
+      height: 720px;
+      background: #FFEBDD;
+      border-radius: 14px;
+      color: #B56673;
+    }
+
+    footer {
+      padding: 30px;
+      background: #FFEBDD;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+
+    .product img {
+      display: block;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 14px;
+    }
+
+    .banner-img {
+      display: block;
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+
+    /* 襪子商品圖：完整顯示，不裁切 */
+    .product img.socks-img {
+      object-fit: contain;
+      background-color: #FFFFFF;
+    }
+
+
+
+    /* 品牌行銷企劃 */
+    .marketing-intro {
+      text-align: center;
+      font-size: 18px;
+      color: #B56673;
+      margin-bottom: 35px;
+    }
+
+    .marketing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .marketing-card {
+      background: #FFEBDD;
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .marketing-card h3 {
+      color: #B56673;
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    .marketing-card p {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    /* 手機版 */
+    @media (max-width: 700px) {
+      .marketing-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    .brand-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 15px 8%;
+      background: #FFFAF5;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      color: #79502E;
+    }
+
+    .brand-logo img {
+      width: 180px;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .brand-logo img {
+        width: 65px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header class="brand-header">
+    <div class="brand-logo">
+      <img src="./images/桃件衣福logo1.png" alt="桃件衣福 Logo">
+     
+    </div>
+
+    <a href="./index.html">← 返回妍究所</a>
+  </header>
+
+
+  <!-- 品牌主視覺 -->
+  <div class="hero">
+    <img src="./images/BANNER.jpg" alt="桃件衣福" class="banner-img">
+  </div>
+
+  <!-- 品牌故事 -->
+
+  <!-- 品牌故事 -->
+  <section class="brand-story">
+    <h2>01｜關於桃件衣福</h2>
+
+    <h3>每一件小衣服，都藏著一點小幸福。</h3>
+
+    <p>
+      從小桃的第一件小衣服開始，我們發現，
+      原來幸福可以藏在每天的穿搭裡。
+    </p>
+
+    <p>
+      「桃件衣福」取自「挑件衣服」的諧音，
+      以小桃為靈感，結合韓系的溫柔簡約
+      與日系的俏皮童趣。
+    </p>
+
+    <p>
+      希望每一件衣服，都能陪伴孩子自在探索世界，
+      也讓每個平凡的小日子，
+      成為值得收藏的幸福回憶。
+    </p>
+
+    <strong>挑件喜歡的，把幸福穿上身。</strong>
+  </section>
+
+
+  <!-- 商品展示 -->
+  <section>
+    <h2>02｜商品視覺設計</h2>
+
+    <div class="products">
+
+      <div class="product">
+        <img src="./images/商品圖.jpg" alt="洋裝">
+        <h3>寶寶上衣</h3>
+      </div>
+
+      <div class="product">
+        <img src="./images/恐龍衣.jpg" alt="包屁衣">
+        <h3>童趣配件</h3>
+      </div>
+
+      <div class="product">
+        <img src="./images/襪子.jpg" alt="襪子" class="socks-img">
+        <h3>可愛洋裝</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 行銷企劃 -->
+
+  <!-- 品牌行銷企劃 -->
+  <section class="marketing">
+
+    <h2>03｜品牌行銷企劃</h2>
+
+    <p class="marketing-intro">
+      讓每一件小衣服，
+      都成為值得分享的幸福日常。
+    </p>
+
+    <div class="marketing-grid">
+
+      <div class="marketing-card">
+        <h3>01｜品牌定位與 TA</h3>
+        <p>
+          韓系簡約 × 日系童趣，
+          以重視寶寶穿搭與生活質感的
+          年輕家庭為主要目標客群。
+        </p>
+      </div>
+
+      <div class="marketing-card">
+        <h3>02｜社群內容經營</h3>
+        <p>
+          規劃 Instagram、Facebook
+          與短影音內容，
+          分享寶寶實穿、穿搭靈感
+          與商品特色。
+        </p>
+      </div>
+
+      <div class="marketing-card">
+        <h3>03｜電商銷售策略</h3>
+        <p>
+          以 D2C 品牌直營電商為核心，
+          搭配節慶行銷、商品企劃
+          與社群導購。
+        </p>
+      </div>
+
+      <div class="marketing-card">
+        <h3>04｜SEO 數位曝光</h3>
+        <p>
+          針對寶寶穿搭、韓系童裝、
+          嬰兒襪子等搜尋需求，
+          規劃網站關鍵字與內容行銷。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    桃件衣福 × 妍究所
+  </footer>
+
+</body>
+
+</html>
